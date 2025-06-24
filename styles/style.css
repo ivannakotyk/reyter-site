@@ -390,14 +390,13 @@ section {
 }
 
 .icon.payment {
-  background: url('https://cdn-icons-png.flaticon.com/512/126/126509.png') no-repeat center/contain;
+  background: url('/assets/images/money.png') no-repeat center/contain;
+  width: 60px;
+  height: 60px;
   animation: pulse 3s ease-in-out infinite;
 }
 
-.icon.return {
-  background: url('https://cdn-icons-png.flaticon.com/512/709/709519.png') no-repeat center/contain;
-  animation: rotateReturn 6s linear infinite;
-}
+
 
 /* Анімації */
 
