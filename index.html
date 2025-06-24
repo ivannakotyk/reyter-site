@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REYTER — Чоловіча білизна</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style-adaptiv.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+
+<header>
+  <div class="logo"><img src="../assets/images/logo_3.png" alt="REYTER"></div>
+  <button class="burger" id="burgerBtn" aria-label="Відкрити меню">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="mainNav">
+    <a href="#about">Про нас</a>
+    <a href="#products">Позиції</a>
+    <a href="#info">Умови доставки</a>
+    <a href="#contacts">Контакти</a>
+    <a href="https://www.instagram.com/reyter.ua?igsh=MTRwdTJ2bGZsZ2x0Zw==" target="_blank"><i class="fab fa-instagram"></i></a>
+  </nav>
+</header>
+
+<section id="about" class="about">
+  <div class="about-image-wrapper">
+    <div class="image-bg"></div>
+    <img src="../assets/images/about.jpg" alt="Про REYTER — український бренд чоловічої білизни" />
+  </div>
+
+  <div class="about-text">
+    <h2>Про REYTER</h2>
+    <p class="subtitle">Характер - це REYTER!</p>
+
+    <button id="readMoreBtn" aria-expanded="false" aria-controls="fullText">Читати більше</button>
+
+    <div id="fullText" class="full-text" hidden>
+      <p><strong>REYTER</strong> — український бренд базової чоловічої білизни.</p>
+      <p>Ми створюємо речі, які працюють щодня — без пафосу, без зайвого, без компромісів.</p>
+      <p>Наш підхід простий: білизна має бути зручною, якісною та непомітною — у найкращому сенсі цього слова. Вона не мусить кричати, щоб бути впевненою. Вона має сидіти ідеально, бути приємною до тіла, витримувати щоденний ритм і залишатися комфортною після десятків прань.</p>
+      <p>Ми за основу. <strong>REYTER</strong> — це фундамент гардеробу: мінімалістичний дизайн, продуманий крій і тканини, які ми підбираємо уважно й ретельно. Ми не женемось за трендами — ми створюємо речі, що працюють поза модою і сезоном.</p>
+      <p>Наша історія — українська. Ми почали з бажання зробити білизну, яку хочеться носити щодня. Виробляємо в Україні, підтримуємо локальні виробництва, самі контролюємо кожен етап: від лекал до фінального шва.</p>
+      <p>Наш принцип — якість у деталях. Ми знаємо, що справжній комфорт починається з того, що найближче до тіла. Тому робимо все, щоб цей перший шар був найкращим.</p>
+    </div>
+  </div>
+</section>
+
+ <section id="products">
+  <h2 class="section-title">Наші позиції</h2>
+      <div class="section-category">
+  <h3 class="category-animated">Брифи</h3>
+  <div class="product-grid">
+
+  <div class="product-card" onclick="openModal(this)"
+     data-name="Брифи classic"
+     data-price="770 UAH / 19$"
+     data-description="Тканина: кулір.&#10;Склад: бавовна 95%, еластан 5%.&#10;Розміри: S, M, L."
+     data-images="assets/images/boxers/bl1.JPG,assets/images/boxers/bl2.JPG,assets/images/boxers/bl3.JPG">
+  <img src="assets/images/boxers/bl1.JPG" alt="Брифи classic">
+  <h3 class="product-title">
+  <span>Брифи classic</span>
+  <span class="color-dot" style="background-color: #3004d1;"></span>
+  <span class="color-dot" style="background-color: #ed1505;"></span>
+</h3>
+  <p>770 UAH / 19$</p>
+</div>
+
+    <div class="product-card" onclick="openModal(this)"
+     data-name="Брифи red wave"
+     data-price="735 UAH/ 18$"
+     data-description="Тканина: кулір.&#10;Склад: бавовна 95%, еластан 5%.&#10;Розміри: S, M, L."
+     data-images="assets/images/boxers/r1.JPG,assets/images/boxers/r2.JPG,assets/images/boxers/r3.JPG">
+      <img src="assets/images/boxers/r1.JPG" alt="Брифи red wave">
+      <h3 class="product-title">
+  <span>Брифи red wave</span>
+  <span class="color-dot" style="background-color: #ed1505;"></span>
+</h3>
+      <p>735 UAH/ 18$</p>
+    </div>
+        <div class="product-card" onclick="openModal(this)"
+     data-name="Брифи classic"
+     data-price="770 UAH/ 19$"
+     data-description="Тканина: кулір.&#10;Склад: бавовна 95%, еластан 5%.&#10;Розміри: S, M, L."
+     data-images="assets/images/boxers/rw4.JPG,assets/images/boxers/rw1.JPG,assets/images/boxers/rw2.JPG,assets/images/boxers/rw3.JPG">
+      <img src="assets/images/boxers/rw4.JPG" alt="Брифи classic">
+      <h3 class="product-title">
+  <span>Брифи classic</span>
+  <span class="color-dot" style="background-color: #ed1505;"></span>
+  <span class="color-dot" style="background-color: #3004d1;"></span>
+</h3>
+      <p>770 UAH/ 19$</p>
+    </div>
+    <div class="product-card" onclick="openModal(this)"
+     data-name="Брифи milk"
+     data-price="730 UAH/ 19$"
+     data-description="Тканина: кулір.&#10;Склад: бавовна 95%, еластан 5%.&#10;Розміри: S, M, L."
+     data-images="assets/images/boxers/w1.JPG,assets/images/boxers/w2.JPG,assets/images/boxers/w3.JPG">
+      <img src="assets/images/boxers/w1.JPG" alt="Брифи milk">
+      <h3 class="product-title">
+  <span>Брифи milk</span>
+  <span class="color-dot" style="background-color: #fdfcfc;"></span>
+</h3>
+      <p>730 UAH/ 19$</p>
+    </div>
+    <div class="product-card" onclick="openModal(this)"
+     data-name="Брифи dark wave"
+     data-price="735 UAH/ 18$"
+     data-description="Тканина: кулір.&#10;Склад: бавовна 95%, еластан 5%.&#10;Розміри: S, M, L."
+     data-images="assets/images/boxers/b3.JPG,assets/images/boxers/b4.JPG,assets/images/boxers/b1.JPG,assets/images/boxers/b2.JPG">
+      <img src="assets/images/boxers/b3.JPG" alt="Брифи dark wave">
+      <h3 class="product-title">
+  <span>Брифи dark wave</span>
+  <span class="color-dot" style="background-color: #0a0101f8;"></span>
+</h3>
+      <p>735 UAH/ 18$</p>
+    </div>
+    <div class="product-card" onclick="openModal(this)"
+     data-name="Брифи dark wave"
+     data-price="760 UAH/ 19$"
+     data-description="Тканина: кулір.&#10;Склад: бавовна 95%, еластан 5%.&#10;Розміри: S, M, L."
+     data-images="assets/images/boxers/g1.JPG,assets/images/boxers/g2.JPG,assets/images/boxers/g3.JPG,assets/images/boxers/g4.JPG">
+      <img src="assets/images/boxers/g1.JPG" alt="Товар 6">
+      <h3 class="product-title">
+      <span>Брифи menthol</span>
+  <span class="color-dot" style="background-color: #62d4faf8;"></span>
+</h3>
+      <p>760 UAH/ 19$</p>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="section-category">
+    <h3 class="category-animated">Майки</h3>
+  <div class="product-grid">
+    <div class="product-card" onclick="openModal(this)"
+     data-name="Майка"
+     data-price="560 UAH/ 14$"
+     data-description="Тканина: кулір.&#10;Склад: бавовна 95%, еластан 5%.&#10;Розміри: S, M, L."
+     data-images="assets/images/tank_top/m3.JPG,assets/images/tank_top/m2.JPG,assets/images/tank_top/m1.JPG">
+      <img src="assets/images/tank_top/m3.JPG" alt="Товар 6">
+      <h3 class="product-title">
+      <span>Майка</span>
+  <span class="color-dot" style="background-color: #f6f7f8f8;"></span>
+</h3>
+      <p>560 UAH/ 14$</p>
+    </div>
+     </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="info" class="conditions">
+  <h2 class="section-title">Умови доставки</h2>
+  <div class="delivery-container">
+    <div class="delivery-item">
+      <div class="icon truck"></div>
+      <p><strong>Відправка протягом 1-2 днів</strong></p>
+    </div>
+    <div class="delivery-item">
+      <div class="icon shipping"></div>
+      <p><strong>Доставка Новою Поштою, Укрпоштою та Meeat</strong></p>
+    </div>
+    <div class="delivery-item">
+      <div class="icon payment"></div>
+      <p><strong>Відправка лише за повної оплати</strong></p>
+    </div>
+    <div class="delivery-item return">
+      <div class="icon return"></div>
+      <p><strong>Нижня білизна не підлягає поверненню чи обміну</strong><br>
+      Згідно постанови КМУ №172 від 19 березня 1994 року</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contacts" class="contacts">
+  <h2 class="section-title">Контакти</h2>
+  <p class="contacts-lead">
+    Ми завжди на звʼязку. Обирайте зручний спосіб — відповімо швидко та допоможемо з будь-яким питанням.
+  </p>
+<div class="contacts-wrapper">
+  <a href="https://t.me/reyter_ua" target="_blank" rel="noopener" class="contact-link">
+    <i class="fab fa-telegram-plane"></i> <span class="contact-text">Telegram</span>
+  </a>
+  <a href="https://www.instagram.com/reyter.ua/" target="_blank" rel="noopener" class="contact-link">
+    <i class="fab fa-instagram"></i> <span class="contact-text">Instagram</span>
+  </a>
+  <a href="https://www.threads.com/@reyter.ua" target="_blank" rel="noopener" class="contact-link">
+    <i class="fas fa-comment-dots"></i> <span class="contact-text">Threads</span>
+  </a>
+  <a href="https://twitter.com/reyter_ua" target="_blank" rel="noopener" class="contact-link">
+    <i class="fab fa-twitter"></i> <span class="contact-text">Twitter</span>
+  </a>
+</div>
+</section>
+
+
+
+  <footer>
+    <p>Характер - це REYTER!</p> 
+    <p style="font-size: 12px; color: black;">і.</p>
+    <p style="font-size: 12px;">&copy; 2025 REYTER. Зроблено з ❤️ в Україні.</p>
+  </footer>
+
+  <!-- МОДАЛЬНЕ ВІКНО -->
+<div id="productModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalName" aria-describedby="modalDescription">
+  <div class="modal-wrapper">
+    <button class="modal-close" onclick="closeModal()" aria-label="Закрити">&times;</button>
+    <div class="modal-gallery">
+      <button class="nav prev" onclick="prevImage()" aria-label="Попереднє зображення">&#10094;</button>
+      <img id="modalImage" src="" alt="Фото товару">
+      <button class="nav next" onclick="nextImage()" aria-label="Наступне зображення">&#10095;</button>
+    </div>
+    <div class="modal-details">
+      <h2 id="modalName"></h2>
+      <div class="color-options" id="modalColors">
+
+      </div>
+      <div class="modal-divider"></div>
+      <p id="modalDescription" class="modal-description"></p>
+      <p class="modal-price" id="modalPrice"></p>
+      <button class="order-button" id="orderBtn">Замовити товар</button>
+      
+    </div>
+  </div>
+</div>
+  <script src="../scripts/modal.js"></script>
+  <script src="../scripts/burger.js"></script>
+  <script src="../scripts/readmore.js"></script>
+  <script src="../scripts/order.js"></script>
+  <script src="../scripts/contacts.js"></script>
+  <script src="../scripts/observer.js"></script>
+
+</body>
+</html>  

@@ -1,0 +1,414 @@
+/* --- Header --- */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px;
+  }
+  .logo img {
+    margin: 0 0 10px 0;
+    height: 70px;
+  }
+  nav {
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  nav a {
+    margin-left: 0.7rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 4px;
+  }
+  .logo img {
+    height: 48px;
+    margin: 0 0 8px 0;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+  }
+  nav a {
+    margin: 0;
+    font-size: 0.98rem;
+  }
+}
+
+/* --- ABOUT Section --- */
+@media (max-width: 1100px) {
+  #about {
+    max-width: 98%;
+    gap: 20px;
+  }
+  .about-image-wrapper img {
+    height: 400px;
+  }
+}
+@media (max-width: 900px) {
+  #about {
+    flex-direction: column;
+    gap: 24px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 0 8px;
+  }
+  .about-image-wrapper img {
+    height: 320px;
+  }
+  .about-text h2 {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 600px) {
+  #about {
+    padding: 0 2vw;
+    margin: 18px auto;
+    gap: 12px;
+  }
+  .about-image-wrapper img {
+    height: 180px;
+  }
+  .about-text h2 {
+    font-size: 1.3rem;
+  }
+  .about-text .subtitle {
+    font-size: 1rem;
+  }
+  #readMoreBtn {
+    min-width: 120px;
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+  .full-text {
+    font-size: 0.97rem;
+    padding: 0 2px;
+  }
+}
+
+/* --- Products Grid --- */
+@media (max-width: 1100px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr; 
+    gap: 12px;
+    max-width: 100%;
+  }
+  .product-card {
+    padding: 6px;
+  }
+  .product-card h3 {
+    font-size: 1rem;
+  }
+  .product-card p {
+    font-size: 0.93rem;
+  }
+}
+
+
+/* --- Conditions --- */
+@media (max-width: 900px) {
+  .conditions {
+    max-width: 98%;
+    margin-bottom: 40px;
+    padding: 0 8px;
+  }
+}
+@media (max-width: 600px) {
+  .conditions {
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0 2vw;
+  }
+  .delivery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; 
+    gap: 14px;
+  }
+  .delivery-item {
+    width: 45%;
+
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding: 12px 6px;
+    font-size: 0.97rem;
+    height: 250px;
+    min-height: 90px; 
+    display: flex;     
+    flex-direction: column;
+    justify-content: center;
+  }
+  .delivery-item p {
+    font-size: 1rem;
+  }
+}
+
+/* --- Contacts --- */
+@media (max-width: 600px) {
+  .contacts-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    margin-top: 12px;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+  .contacts-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .contact-link {
+    min-width: 10%;
+    max-width: 15%;
+    flex: 0 0 auto;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    border-radius: 1px;
+    margin: 0;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.03);
+    background: #fafafa;
+    transition: background 0.2s, color 0.2s;
+  }
+  .contact-link i {
+    font-size: 2em;
+    margin: 0;
+  }
+  .contact-link .contact-text {
+    display: none;
+  }
+}
+
+/* --- Footer --- */
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.93rem;
+    padding: 1rem 0;
+  }
+}
+
+/* --- Modal --- */
+@media (max-width: 900px) {
+  .modal-wrapper {
+    flex-direction: column;
+    width: 95vw;
+    max-width: 95vw;
+    padding: 0;
+  }
+  .modal-gallery, .modal-details {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 0;
+  }
+  .modal-details {
+    padding: 18px 8px;
+  }
+}
+@media (max-width: 600px) {
+  .modal-wrapper {
+    width: 90vw;
+    max-width: 90vw;
+    min-width: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+  .modal-gallery img {
+    max-width: 90vw;
+    height: auto;
+  }
+  .modal-details {
+    padding: 10px 2vw;
+  }
+  .modal-details h2 {
+    font-size: 1.2rem;
+    margin: 15px 0 0px 0;
+    text-align: center;
+  }
+  .modal-description,
+  .modal-price {
+    font-size: 0.97rem;
+    margin-bottom: 14px;
+  }
+  .order-button {
+    min-width: 100px;
+    font-size: 0.97rem;
+    margin: 5px auto 10px auto;
+    padding: 10px 8px;
+  }
+}
+
+/* --- Додатково: плавність для всіх секцій --- */
+section, .modal-wrapper, .product-card, .contact-link, .delivery-item {
+  transition: all 0.25s cubic-bezier(.4,1.2,.4,1);
+}
+
+/* --- Додатково: покращення скролу на мобільних --- */
+html, body {
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* --- Додатково: приховати зайві скроллбари на мобільних --- */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #fff;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+/* --- Burger styles --- */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1200;
+  margin-left: auto;
+  margin-right: 18px;
+}
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #111;
+  margin: 6px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* --- Адаптивний хедер --- */
+@media (max-width: 700px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.95);
+    border-bottom: 1px solid #eaeaea;
+    backdrop-filter: blur(0px);
+  }
+  .logo {
+    margin: 0 auto 0 0;
+  }
+  .logo img {
+    height: 40px;
+    margin: 0;
+    display: block;
+  }
+  .burger {
+    display: flex;
+  }
+  nav {
+    position: fixed;
+    top: 0; right: 0;
+    height: 50vh;
+    width: 78vw;
+    max-width: 320px;
+    background: #fff;
+    box-shadow: -2px 0 16px rgba(0,0,0,0.07);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 70px 24px 24px 24px;
+    gap: 18px;
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(.4,1.2,.4,1);
+    z-index: 1100;
+    opacity: 0.98;
+    border-left: 1px solid #eee;
+  }
+  nav.open {
+    transform: translateX(0);
+  }
+  nav a {
+    margin: 0 0 12px 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #111;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #f2f2f2;
+    text-align: left;
+    display: block;
+    transition: color 0.2s;
+  }
+  nav a:last-child {
+    border-bottom: none;
+  }
+}
+
+/* --- Приховати меню на мобільному, якщо не open --- */
+@media (max-width: 700px) {
+  nav {
+    display: flex;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  nav.open {
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+/* --- На десктопі бургер не показувати --- */
+@media (min-width: 701px) {
+  .burger {
+    display: none !important;
+  }
+  nav {
+    position: static !important;
+    height: auto !important;
+    width: auto !important;
+    box-shadow: none !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    transform: none !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    opacity: 1 !important;
+    border: none !important;
+  }
+  nav a {
+    margin: 0 0 0 1.5rem;
+    font-size: 1rem;
+    border-bottom: none;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+  }
+}
+

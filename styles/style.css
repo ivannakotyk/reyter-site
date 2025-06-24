@@ -1,0 +1,769 @@
+:root {
+  --primary-color: #111;
+  --text-color: #111;
+  --bg-color: #fff;
+  --gray: #eaeaea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* --- Header --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.7);
+  
+  z-index: 1000;
+  border-bottom: 1px solid var(--gray);
+}
+
+.logo img {
+  height: 100px;
+  object-fit: contain;
+  margin: 0 95px;
+}
+
+nav {
+    margin-right: 55px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* --- Section styling --- */
+section {
+  padding: 4rem 1.5rem;
+  max-width: 1400px;
+  margin: auto;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2rem, 8vw, 200px);
+  font-weight: 800; 
+  color: #111;
+  letter-spacing: 0.5px;
+  text-align: left; 
+  margin-bottom: 2rem;
+}
+
+
+/* --- ABOUT Section --- */
+#about {
+  max-width: 85%;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #222;
+
+  display: flex; 
+  align-items: center; 
+  gap: 40px; 
+  flex-wrap: wrap;
+}
+
+.about-image-wrapper {
+  flex: 1 1 37%;
+  max-width: 1000px;
+  margin: 0; 
+  position: relative;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.image-bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.about-image-wrapper img {
+  display: block;
+  width: 100%;
+  border-radius: 1px;
+  position: relative;
+  z-index: 2;
+  object-fit: cover;
+  height: 600px;
+}
+
+.about-text {
+  flex: 1 1 57%;
+  text-align: left;
+  max-width: none;
+  margin: 0;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.3em;
+  color: #111;
+}
+
+.about-text .subtitle {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 1.8em;
+  font-style: italic;
+}
+
+#readMoreBtn {
+  background-color: #000;
+  color: #fff; 
+  border: 1px solid #fff; 
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  min-width: 200px;
+  margin-top: 0px;
+  margin-bottom: 2.5em;
+  border-radius: 1%;
+}
+
+#readMoreBtn:hover {
+  background-color: #fff; 
+  color: #000;
+  border-color: #000;
+}
+
+
+.full-text {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 10px;
+  border-top: 1px solid #ddd;
+}
+
+.full-text.show {
+  max-height: 1000px;
+  padding: 20px 10px 0 10px;
+}
+
+#products {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 93%; 
+  margin: 0 auto;
+}
+.section-category {
+  border-left: 0.001px solid #eae9e9; 
+  border-right: 0.001px solid #eae9e9; 
+  border-top: 0.001px solid #eae9e9;  
+    border-bottom: 0.001px solid #eae9e9; 
+    border-radius: 0.1%;
+    margin: 50px 0;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 2fr; 
+  }
+}
+
+
+.product-card {
+  text-align: center;
+  transition: transform 0.2s ease;
+  font-family: 'Inter', sans-serif;
+  padding: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #111;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.02);
+}
+
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.product-title {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.color-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: gray;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.category-animated {
+  opacity: 0;
+  transform: scale(0.95) translateY(30px);
+  transition: all 0.8s ease-out;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  margin: 60px 0 30px;
+  color: #111;
+}
+
+.category-animated.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+
+
+
+/* --- Conditions section --- */
+.conditions {
+  max-width: 80%;
+  margin: 0 auto 100px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.delivery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2.5rem;
+  margin-top: 0px;
+}
+
+.delivery-item {
+  background: #ffffff;
+  border-radius: 1px;
+  padding: 20px 25px;
+  width: 40%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  position: relative;
+  overflow: visible;
+   background: #fafafa;
+    border-left: 0.001px solid #eae9e9;  
+  border-right: 0.001px solid #eae9e9;  
+  border-top: 0.001px solid #eae9e9;  
+    border-bottom: 0.001px solid #eae9e9; 
+}
+
+
+
+.delivery-item p {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #111;
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+.delivery-item.return p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  margin-top: 8px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
+
+
+.icon.truck {
+  background: url('https://cdn-icons-png.flaticon.com/512/34/34627.png') no-repeat center/contain;
+  animation: moveTruck 3s ease-in-out infinite alternate;
+}
+
+.icon.shipping {
+  background: url('https://cdn-icons-png.flaticon.com/512/725/725643.png') no-repeat center/contain;
+  animation: floatUp 4s ease-in-out infinite;
+}
+
+.icon.payment {
+  background: url('https://cdn-icons-png.flaticon.com/512/126/126509.png') no-repeat center/contain;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.icon.return {
+  background: url('https://cdn-icons-png.flaticon.com/512/709/709519.png') no-repeat center/contain;
+  animation: rotateReturn 6s linear infinite;
+}
+
+/* Анімації */
+
+@keyframes moveTruck {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(15px); }
+}
+
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1)); }
+  50% { transform: scale(1.1); filter: drop-shadow(0 6px 6px rgba(0,0,0,0.15)); }
+}
+
+@keyframes rotateReturn {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .delivery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .delivery-item {
+    width: 80%;
+    max-width: 350px;
+  }
+}
+
+/* --- Contacts section --- */
+.contacts {
+  background: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.15rem;
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding: 10px 24px;
+  border-radius: 1px;
+  background: #fafafa;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.03);
+  transition: 
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s,
+    border-bottom 0.2s;
+      border-left: 0.001px solid #eae9e9;
+  border-right: 0.001px solid #eae9e9;  
+  border-top: 0.001px solid #eae9e9;   
+    border-bottom: 0.001px solid #eae9e9; 
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.contact-link i {
+  font-size: 1.4em;
+  color: #222;
+  transition: color 0.2s;
+}
+
+.contact-link:hover, .contact-link:focus {
+  background: #222;
+  color: #fff;
+  border-bottom: 1px solid #222;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+}
+
+.contact-link:hover i, .contact-link:focus i {
+  color: #fff;
+}
+
+.contact-link span {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 600px) {
+  .contacts-wrapper {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .contact-link {
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+
+/* Анімація появи */
+.contacts-wrapper {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.contacts.visible .contacts-wrapper {
+  opacity: 1;
+  transform: none;
+}
+
+.contacts-lead {
+  max-width: 520px;
+  margin: 0 auto 36px auto;
+  color: #444;
+  font-size: 1.13rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* Адаптивність */
+@media (max-width: 600px) {
+  .contacts a {
+    margin: 0 1rem 1.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+
+/* --- Footer --- */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+}
+
+/* --- Адаптивність --- */
+@media (max-width: 700px) {
+  #about {
+    flex-direction: column;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .about-image-wrapper {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* --- МОДАЛЬНЕ ВІКНО --- */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-overlay {
+  position: absolute;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.modal-wrapper {
+  position: relative;
+  display: flex;
+  max-width: 1000px;
+  width: 90%;
+  background: white;
+  border-radius: 0;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  flex-wrap: wrap;
+}
+
+.modal-gallery {
+  position: relative;
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+
+.modal-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+   pointer-events: none; 
+}
+
+.modal-details {
+  flex: 1 1 50%;
+  padding: 40px 30px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-details h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111;
+  margin: 75px 0;
+}
+
+.modal-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.modal-details .price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  margin-top: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 2rem;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+    z-index: 10; 
+  pointer-events: auto; 
+}
+
+.nav:hover {
+  background: white;
+}
+
+.nav.prev { left: 10px; }
+.nav.next { right: 10px; }
+
+
+
+.order-button {
+  background-color: #fff;
+  color: #000; 
+  border: 1px solid #000; 
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border-radius: 0; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  width: auto;
+  max-width: none;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.order-button:hover {
+  background-color: #000;
+  color: #fff; 
+  border-color: #000;
+}
+.order-button {
+  min-width: 200px;
+  margin: 150px auto 0 auto;
+  display: block;
+}
+
+/* Назва товару */
+.modal-details h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Роздільна лінія */
+.modal-divider {
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+
+/* Кольорові квадратики */
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.color-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.color-dot:hover,
+.color-dot.active {
+  border-color: #111;
+}
+
+.modal-description {
+  line-height: 1.5;
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  white-space: pre-line; 
+  font-family: 'Inter', sans-serif;
+}
+
+/* Ціна */
+.modal-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}  
