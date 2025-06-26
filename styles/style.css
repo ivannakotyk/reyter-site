@@ -49,7 +49,7 @@ nav a {
   margin-left: 1.5rem;
   text-decoration: none;
   color: var(--text-color);
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
 }
 
@@ -80,7 +80,7 @@ section {
 .section-title {
   font-family: 'Inter', sans-serif;
   font-size: clamp(2rem, 8vw, 200px);
-  font-weight: 800; 
+  font-weight: 650; 
   color: #111;
   letter-spacing: 0.5px;
   text-align: left; 
@@ -139,7 +139,7 @@ section {
 
 .about-text h2 {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 650;
   margin-bottom: 0.3em;
   color: #111;
 }
@@ -205,7 +205,7 @@ section {
 .section-title {
   font-family: 'Inter', sans-serif;
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 650;
   color: #111;
   margin-bottom: 2rem;
   text-align: center;
@@ -255,7 +255,7 @@ section {
 .product-card p {
   font-size: 1rem;
   color: #444;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 0.5rem;
   line-height: 1.6;
 }
@@ -304,7 +304,7 @@ section {
   transition: all 0.8s ease-out;
   text-align: center;
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: 'Inter', sans-serif;
@@ -356,7 +356,7 @@ section {
 
 
 .delivery-item p {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.15rem;
   color: #111;
   margin-top: 15px;
@@ -365,7 +365,7 @@ section {
 
 .delivery-item.return p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #555;
   margin-top: 8px;
 }
@@ -376,6 +376,10 @@ section {
   margin: 0 auto;
   position: relative;
   filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
+
+#internationalDelivery {
+  width: 50%;
 }
 
 
@@ -395,6 +399,14 @@ section {
   height: 60px;
   animation: pulse 3s ease-in-out infinite;
 }
+.icon.international {
+  background: url('/assets/images/international.png') no-repeat center/contain;
+  width: 60px;
+  height: 60px;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+
 
 
 
@@ -419,6 +431,12 @@ section {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+@keyframes floatGlobe {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
 
 /* Адаптивність */
 @media (max-width: 768px) {
@@ -523,7 +541,7 @@ section {
   margin: 0 auto 36px auto;
   color: #444;
   font-size: 1.13rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.01em;
   line-height: 1.6;
   opacity: 0.85;
@@ -713,7 +731,7 @@ footer {
 /* Назва товару */
 .modal-details h2 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 12px;
   letter-spacing: 0.03em;
   color: #111;
@@ -761,7 +779,7 @@ footer {
 /* Ціна */
 .modal-price {
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 30px;
   color: #111;
   font-family: 'Inter', sans-serif;
