@@ -156,6 +156,19 @@
     flex-direction: column;
     justify-content: center;
   }
+  #internationalDelivery {
+     width: 95%;
+
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding: 12px 6px;
+    font-size: 0.97rem;
+    height: 250px;
+    min-height: 90px; 
+    display: flex;     
+    flex-direction: column;
+    justify-content: center;
+  }
   .delivery-item p {
     font-size: 1rem;
   }
@@ -176,7 +189,43 @@
     display: none;
   }
   .contact-link {
-    min-width: 10%;
+    min-width: 5%;
+    max-width: 14%;
+    flex: 0 0 auto;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    border-radius: 1px;
+    margin: 0;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.03);
+    background: #fafafa;
+    transition: background 0.2s, color 0.2s;
+
+  }
+  .contact-link i {
+    font-size: 2em;
+    margin: 0;
+  }
+  .contact-link .contact-text {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .contacts-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1.5%;
+    margin-top: 12px;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+  .contacts-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .contact-link {
+    min-width: 5%;
     max-width: 15%;
     flex: 0 0 auto;
     justify-content: center;
@@ -187,6 +236,7 @@
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.03);
     background: #fafafa;
     transition: background 0.2s, color 0.2s;
+
   }
   .contact-link i {
     font-size: 2em;
@@ -305,7 +355,7 @@ body {
 }
 
 /* --- Адаптивний хедер --- */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   header {
     flex-direction: row;
     align-items: center;
@@ -369,7 +419,7 @@ body {
 }
 
 /* --- Приховати меню на мобільному, якщо не open --- */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   nav {
     display: flex;
     visibility: hidden;
@@ -409,6 +459,61 @@ body {
     text-align: left;
     display: inline-block;
     padding: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .burger {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .burger span {
+    height: 2px;
+    margin: 4px 0;
+  }
+  nav {
+    width: 85vw;
+    padding: 60px 16px;
+    gap: 12px;
+  }
+  nav a {
+    font-size: 1rem;
+    padding: 6px 0;
+  }
+}
+@media (max-width: 390px) {
+  .modal-wrapper {
+    width: 90vw;
+    padding: 20px 0 0 0;
+  }
+  .modal-gallery img {
+    width: 70%;
+    height: auto;
+  }
+  .modal-details h2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .modal-description, .modal-price {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  .order-button {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .delivery-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .delivery-item, #internationalDelivery{
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
   }
 }
 
