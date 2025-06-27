@@ -173,6 +173,18 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 375px) {
+  .delivery-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .delivery-item, #internationalDelivery{
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
 
 /* --- Contacts --- */
 @media (max-width: 600px) {
@@ -382,8 +394,8 @@ body {
   nav {
     position: fixed;
     top: 0; right: 0;
-    height: 50vh;
-    width: 78vw;
+    height: 100vh;
+    width: 100vw;
     max-width: 320px;
     background: #fff;
     box-shadow: -2px 0 16px rgba(0,0,0,0.07);
@@ -463,26 +475,6 @@ body {
 }
 
 @media (max-width: 390px) {
-  .burger {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  .burger span {
-    height: 2px;
-    margin: 4px 0;
-  }
-  nav {
-    width: 85vw;
-    padding: 60px 16px;
-    gap: 12px;
-  }
-  nav a {
-    font-size: 1rem;
-    padding: 6px 0;
-  }
-}
-@media (max-width: 390px) {
   .modal-wrapper {
     width: 90vw;
     padding: 20px 0 0 0;
@@ -502,18 +494,6 @@ body {
   .order-button {
     font-size: 0.95rem;
     padding: 8px 10px;
-  }
-}
-
-@media (max-width: 375px) {
-  .delivery-container {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .delivery-item, #internationalDelivery{
-    width: 100%;
-    padding: 10px;
-    font-size: 0.95rem;
   }
 }
 
