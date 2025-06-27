@@ -874,14 +874,14 @@ footer {
 }
 .order-button {
   min-width: 200px;
-  margin: 15px auto 0 auto;
+  margin: 20px auto 0 auto;
   display: block;
 }
 .size-link {
   display: block;    
   margin: 0;          
   padding: 0;       
-  margin: 130px auto 0 auto;
+  margin: 15vh auto 0 auto;
   text-align: center;
   color: #666666;
   font-family: 'Arial', sans-serif;
