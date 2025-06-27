@@ -289,37 +289,41 @@
 }
 @media (max-width: 600px) {
   .modal-wrapper {
-    width: 90vw;
-    max-width: 90vw;
+    width: 85vw;
+    max-width: 95vw;
     min-width: 0;
     border-radius: 0;
     padding: 0;
   }
   .modal-gallery img {
-    max-width: 90vw;
-    height: auto;
+    max-width: auto;
+    height: 40vh;
   }
   .modal-details {
-    padding: 10px 2vw;
+    padding: 8px 2vw;
   }
   .modal-details h2 {
-    font-size: 1.2rem;
-    margin: 15px 0 0px 0;
+    font-size: 1.1rem;
+    margin: 10px 0 0px 0;
     text-align: center;
+  }
+  .color-options {
+    margin: 5px 0 0 0;
   }
   .modal-description,
   .modal-price {
-    font-size: 0.97rem;
-    margin-bottom: 14px;
+    font-size: 0.90rem;
+    margin-bottom: 10px;
   }
   .order-button {
     min-width: 100px;
-    font-size: 0.97rem;
-    margin: 12px auto 10px auto;
+    font-size: 0.90rem;
+    margin: 10px auto 8px auto;
     padding: 10px 8px;
   }
   .size-link {      
-  margin: 0.8vh auto 0 auto;
+  margin: 0 auto 0 auto;
+  font-size: 0.80rem;
   }
 }
 
@@ -484,12 +488,12 @@ body {
 
 @media (max-width: 390px) {
   .modal-wrapper {
-    width: 80vw;
+    width: 85vw;
     padding: 15px 0 0 0;
   }
   .modal-gallery img {
-    width: 75%;
-    height: auto;
+    width: auto;
+    height: 50vh;
   }
   .modal-details h2 {
     font-size: 1rem;
