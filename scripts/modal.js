@@ -76,3 +76,11 @@
       touchStartY = null;
     });
   })();
+document.getElementById('sizeLink').addEventListener('click', function(e) {
+  e.preventDefault();
+  const target = document.querySelector(this.getAttribute('href'));
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+    closeModal(); // якщо хочеш, щоб модалка закривалась при переході
+  }
+});

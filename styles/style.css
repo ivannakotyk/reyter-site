@@ -265,7 +265,7 @@ section {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 1%;
   transition: transform 0.3s ease;
 }
 
@@ -316,6 +316,156 @@ section {
   opacity: 1;
   transform: scale(1) translateY(0);
 }
+
+/* --- Size Guide section --- */
+.size-guide {
+  padding: 100px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.size-title {
+  font-size: 2.75rem;
+  font-weight: 650;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+}
+
+.size-subtitle {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.size-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+  padding: 40px;
+  border-radius: 1px;
+  border-left: 0.001px solid #eae9e9;  
+  border-right: 0.001px solid #eae9e9;  
+  border-top: 0.001px solid #eae9e9;  
+    border-bottom: 0.001px solid #eae9e9; 
+}
+
+.size-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background: #fff;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.03);
+}
+.size-table,
+.size-visual {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* або flex-start/flex-end — як зручно */
+}
+
+
+.size-table th,
+.size-table td {
+  text-align: center;
+  padding: 16px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.size-table th {
+  background: #f2f2f2;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+}
+
+.size-visual {
+  text-align: center;
+}
+
+.size-visual img {
+  max-width: 100%;
+  border-radius: 1px;
+  transition: transform 0.3s ease;
+}
+
+.size-visual img:hover {
+  transform: scale(1.015);
+}
+
+.size-caption {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 16px;
+  line-height: 1.5;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .size-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .size-title {
+    font-size: 2rem;
+  }
+
+  .size-subtitle {
+    font-size: 1rem;
+  }
+
+  .size-table th,
+  .size-table td {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
+/* --- Image Modal --- */
+.image-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(251, 249, 249, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.image-modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 1px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.image-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 
 
@@ -379,7 +529,7 @@ section {
 }
 
 #internationalDelivery {
-  width: 50%;
+  width: 92%;
 }
 
 
@@ -724,9 +874,33 @@ footer {
 }
 .order-button {
   min-width: 200px;
-  margin: 150px auto 0 auto;
+  margin: 15px auto 0 auto;
   display: block;
 }
+.size-link {
+  display: block;    
+  margin: 0;          
+  padding: 0;       
+  margin: 130px auto 0 auto;
+  text-align: center;
+  color: #666666;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.size-link:hover,
+.size-link:focus {
+  color: #000;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Для кнопки твої стилі лишаємо без змін */
 
 /* Назва товару */
 .modal-details h2 {

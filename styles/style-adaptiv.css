@@ -118,6 +118,9 @@
   .product-card p {
     font-size: 0.93rem;
   }
+  .product-card img {
+    border-radius: 1%;
+  }
 }
 
 
@@ -436,6 +439,7 @@ body {
     display: flex;
     visibility: hidden;
     pointer-events: none;
+    opacity: 0.96;
   }
   nav.open {
     visibility: visible;
@@ -463,6 +467,7 @@ body {
     pointer-events: auto !important;
     opacity: 1 !important;
     border: none !important;
+    opacity: 0.96;
   }
   nav a {
     margin: 0 0 0 1.5rem;

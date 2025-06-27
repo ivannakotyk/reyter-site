@@ -19,6 +19,7 @@
   <nav id="mainNav">
     <a href="#about">Про нас</a>
     <a href="#products">Позиції</a>
+    <a href="#size-guide">Розмірна сітка</a>
     <a href="#info">Умови доставки</a>
     <a href="#contacts">Контакти</a>
   </nav>
@@ -154,6 +155,36 @@
   </div>
 </section>
 
+<section id="size-guide" class="size-guide">
+  <div class="container">
+    <h2 class="size-title">Розмірна сітка</h2>
+    <p class="size-subtitle">Заміряйте талію та стегна — знайдіть свій ідеальний розмір.</p>
+
+    <div class="size-grid">
+      <div class="size-table">
+        <table>
+          <thead>
+            <tr><th>Розмір</th><th>Талія (см)</th><th>Стегна (см)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>XS</td><td>80-84</td><td>95-99</td></tr>
+            <tr><td>S</td><td>84-88</td><td>99-103</td></tr>
+            <tr><td>M</td><td>88-92</td><td>103-107</td></tr>
+            <tr><td>L</td><td>92-96</td><td>107-111</td></tr>
+            <tr><td>XL</td><td>96-100</td><td>111-115</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="size-visual">
+  <img src="/assets/images/size_2.png" alt="Як виміряти стегна" class="zoomable">
+</div>
+
+    </div>
+  </div>
+</section>
+
+
 
 <section id="info" class="conditions">
   <h2 class="section-title">Умови доставки</h2>
@@ -231,6 +262,7 @@
       <div class="modal-divider"></div>
       <p id="modalDescription" class="modal-description"></p>
       <p class="modal-price" id="modalPrice"></p>
+      <a href="#size-guide" class="size-link" id="sizeLink">Як обрати розмір?</a>
       <button class="order-button" id="orderBtn">Замовити товар</button>
       
     </div>
@@ -242,6 +274,7 @@
   <script src="../scripts/order.js"></script>
   <script src="../scripts/contacts.js"></script>
   <script src="../scripts/observer.js"></script>
+  <script src="../scripts/size-guide.js"></script>
 
 </body>
 </html>  
