@@ -120,6 +120,11 @@
   }
   .product-card img {
     border-radius: 1%;
+    height: 27vh;
+  }
+  .product-card h10 {
+    font-size: 0.001px;
+    color: white;
   }
 }
 
