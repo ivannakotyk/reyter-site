@@ -15,9 +15,7 @@
 🔗 [Live Demo (GitHub Pages)](https://ivannakotyk.github.io/reyter-site/)  
 🔗 [GitHub Repository](https://github.com/ivannakotyk/reyter-site)
 
- Прев'ю
-
-## Відео-прев'ю
+## Прев'ю
 
 ### Адаптивна версія (десктоп / планшет)
 ![Desktop version preview](./assets/videos/reyter-desktop.gif)
