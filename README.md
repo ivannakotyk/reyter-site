@@ -18,10 +18,10 @@
 ## Прев'ю
 
 ### Адаптивна версія (десктоп / планшет)
-![Desktop version preview](./assets/videos/reyter-desktop.gif)
+![Desktop version preview](./assets/videos/reyter-desktop.mp4)
 
 ### Мобільна версія
-![Mobile version preview](./assets/videos/reyter-mobile.gif)
+![Mobile version preview](./assets/videos/reyter-mobile.mp4)
 
 ## Можливості
 
