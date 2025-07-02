@@ -18,10 +18,17 @@
 ## Прев'ю
 
 ### Адаптивна версія (десктоп / планшет)
-![Desktop version preview](./assets/videos/reyter-desktop.mp4)
+<video width="600" controls>
+  <source src="./assets/videos/reyter-desktop.mp4" type="video/mp4">
+  Ваш браузер не підтримує відтворення відео.
+</video>
 
 ### Мобільна версія
-![Mobile version preview](./assets/videos/reyter-mobile.mp4)
+<video width="300" controls>
+  <source src="./assets/videos/reyter-mobile.mp4" type="video/mp4">
+  Ваш браузер не підтримує відтворення відео.
+</video>
+
 
 ## Можливості
 
