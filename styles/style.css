@@ -104,7 +104,7 @@ section {
 }
 
 .about-image-wrapper {
-  flex: 1 1 37%;
+  flex: 1 1 40%;
   max-width: 1000px;
   margin: 0; 
   position: relative;
@@ -131,7 +131,7 @@ section {
 }
 
 .about-text {
-  flex: 1 1 57%;
+  flex: 1 1 45%;
   text-align: left;
   max-width: none;
   margin: 0;
